@@ -8,10 +8,10 @@
 Basic HTML & CSS exercise to start practicing
 
 Concepts involved
-Mobile first
-HTML 5 semantic
-Flexbox
-Responsive design
+- Mobile first
+- HTML 5 semantic
+- Flexbox
+- Responsive design
 
 
 #### Mobile
