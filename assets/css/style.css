@@ -1,0 +1,164 @@
+
+/*----------------FONT FACE ---------------------*/
+
+@font-face {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  src: url(/assets/statics/BarlowSemiCondensed-Light.ttf);
+}
+
+/*-------------CONTAINER----------------------------*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color:#cfcfcf;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0
+}
+
+.container {
+ max-height: 100%;
+ padding: 30px;
+}
+
+
+
+.card.grid-1 {
+  grid-area: a;
+}
+
+.card.grid-2 {
+  grid-area: b
+}
+
+.card.grid-3 {
+  grid-area: c
+}
+
+.card.grid-4 {
+  grid-area: d
+}
+
+.card.grid-5 {
+  grid-area: e
+}
+
+/*-----------------COMUN CARD -------------------------*/
+.card {
+  background: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.card .card-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card .card-contact .avatar {
+  max-width: 30px;
+  padding-right: 10px;
+}
+
+.card .card-contact .avatar img {
+  width: 100%;
+  border-radius: 100%;
+  object-fit: contain;
+}
+
+.card .name h3 {
+  color:#48556a;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.card .name p {
+  opacity: 70%;
+  font-size: 13px;
+  margin-top: 0;
+  color: #48556a
+}
+
+.card .card-text {
+  color:#48556a
+}
+
+.card .card-text {
+  font-size: 15px;
+}
+
+/*--------COLOR CARDS --------------------------*/
+
+.card.card-dark .card-contact h3 {
+  color: #ffffff;
+}
+
+.card.card-dark .card-contact p {
+  color: #ffffff;
+}
+
+.card.card-dark .card-text h3 {
+  color: #ffffff;
+}
+
+.card.card-dark .card-text p {
+  color: #ffffff;
+  opacity: 70%;
+  font-size: 15px;
+}
+
+.card.card-dark.bg-violet {
+  background:  #7541c8
+}
+
+.card.card-dark.bg-black {
+  background: #48556a;
+}
+
+.card.card-dark.bg-blue {
+  background: #19212e;
+}
+
+/*---------------RESPONSIVE ---------------------*/
+
+@media only screen and (min-width: 800px) {
+  .container {
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 50%;
+    grid-template-areas:
+          "a c"
+          "e e"
+          "d b";
+    gap: 20px
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+
+.container {
+  display: grid;
+  grid-template-areas:  "a a b c"
+                        "d e e c";
+  padding: 30px;
+  grid-template-columns: 25%;
+  grid-template-rows: 50%;
+}
+
+.card {
+  overflow: hidden;
+}
+
+}
