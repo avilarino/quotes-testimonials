@@ -1,9 +1,8 @@
 
-# Quotes - Testimonials - coded by Agustin Vilariño - 
+# Quotes - Testimonials 
+- coded by Agustin Vilariño - 
 
 ## Welcome! 👋
-
-- Concepts involved - 
 
 Basic HTML & CSS exercise to start practicing
 
